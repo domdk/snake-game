@@ -5,3 +5,6 @@ Image attribution can be found in the images folder.
 www.devildog.co.za
 dom@devildog.co.za
 
+Find the live game here: 
+https://snake.devildog.co.za 
+
