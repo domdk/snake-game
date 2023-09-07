@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    position: relative;
+    animation-timing-function: linear;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    max-height: 650px;
+    margin: auto;
+    font-family: 'Lilita One', cursive;
+    background-color: #C7DBC1;
+    background-image: url(images/background-snake.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* width: 100vh;
+    height: 100vw; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(0, 0) rotate(360deg);
+
+}
+
+h1 {
+    color: #305428;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-shadow: 0 0 1px #305428;
+}
+
+#startScreen {
+    position: absolute;
+    top: 0;
+    width: 1280px;
+    height: 1024px;
+    margin: 0;
+    z-index: 10;
+    background-image: url(images/startScreen2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#startScreen button {
+    width: 200px;
+    height: 75px;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 0 5px #722231;
+}
+
+#startScreen button:hover {
+    background-color: #FCB435;
+
+}
+
+#gameContainer {
+    margin: 20px auto;
+}
+
+
+
+#gameBoard {
+    box-shadow: 0 0 5px #305428;
+}
+
+#controlBtns {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#resetButton {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Lilita One', cursive;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #EF3E5F;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #305428;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 0;
+}
+
+#scoreText {
+    width: 100px;
+    height: 30px;
+    padding-top: 4px;
+    color: rgb(255, 255, 255);
+    background-color: #4A8F35;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #305428;
+}
+
+
+
+
+.arrowControls {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    /* margin-left: 20px;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowControls div {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 20px; */
+    text-align: center;
+}
+
+.arrowControls button {
+    font-family: 'Lilita One', cursive;
+    color: #305428;
+    font-weight: 400;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #FCB435;
+    border: none;
+    box-shadow: 0 0 2px #305428;
+}
+
+footer {
+    width: 250px;
+    height: 75px;
+    margin: auto;
+    bottom: auto;
+    position: relative;
+}
+
+.contact {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #305428;
+}
+
+@media (max-width: 650px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #startScreen {
+        position: absolute;
+        top: 0;
+        width: 400px;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        z-index: 10;
+        background-image: url(images/startScreen.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

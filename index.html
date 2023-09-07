@@ -1,0 +1,59 @@
+<!--FlowerImages by <a href="https://www.freepik.com/free-vector/hand-drawn-spring-flower-collection-concept_6951286.htm#page=2&query=flowers%20vector&position=15&from_view=search&track=ais">Freepik</a>
+
+Snake Image by <a href="https://www.freepik.com/free-vector/trop-view-flat-snake-with-leaves-background_4211102.htm#query=snake%20circle%20vector&position=35&from_view=search&track=ais">Freepik</a>
+
+Youtube Tutorial by BroCode-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game | Devil Dog Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="startScreen">
+        <button onclick="startGame()">Let's Play</button>
+    </div>
+    <h1>Snake Game</h1>
+    <div id="gameContainer">
+
+        <canvas id="gameBoard" width="300px" height="300px" style="display: none;"></canvas>
+
+    </div>
+    <div id="controlBtns">
+        <button id="resetButton">reset</button>
+        <div id="scoreText">0</div>
+    </div>
+
+    <div class="arrowControls">
+        <div></div>
+        <div><button id="arrowUp" class="control">up</button></div>
+        <div></div>
+        <div><button id="arrowLeft" class="control">left</button></div>
+        <div></div>
+        <div> <button id="arrowRight" class="control">right</button></div>
+        <div></div>
+        <div><button id="arrowDown" class="control">down</button>
+        </div>
+        <div></div>
+    </div>
+
+
+
+    <footer>
+        <p class="contact">(use arrow keys on desktop)</p>
+        <p class="contact">email | dom@devildog.co.za</p>
+
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
